@@ -124,6 +124,7 @@ button,
 input:where([type=button]),
 input:where([type=reset]),
 input:where([type=submit]) {
+    appearance: button;
     -webkit-appearance: button;
     background-color: transparent;
     background-image: none
@@ -147,6 +148,7 @@ progress {
 }
 
 [type=search] {
+    appearance: button;
     -webkit-appearance: textfield;
     outline-offset: -2px
 }
@@ -235,7 +237,7 @@ object,
 svg,
 video {
     display: block;
-    vertical-align: middle
+    /*vertical-align: middle*/
 }
 
 img,
@@ -251,6 +253,7 @@ video {
 input[type=number],
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
+    appearance: textfield;
     -webkit-appearance: none;
     margin: 0;
     -moz-appearance: textfield !important
@@ -965,6 +968,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 2;
     -webkit-line-clamp: 2
 }
 
@@ -976,6 +983,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .line-clamp-4 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 4;
     -webkit-line-clamp: 4
 }
 
@@ -4598,6 +4609,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .\[-webkit-appearance\:none\] {
+    appearance: none;
     -webkit-appearance: none
 }
 
@@ -8320,6 +8332,7 @@ input[type=radio]:checked+span {
 }
 
 .\[\&\:\:-moz-range-thumb\]\:\[-webkit-appearance\:none\]::-moz-range-thumb {
+    appearance: none;
     -webkit-appearance: none
 }
 
